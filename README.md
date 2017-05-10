@@ -1,8 +1,9 @@
 # send-email
 
-Send a quick email using node app :)
+Send a quick email using any major email service provider.
 
-It uses [Nodemailer](https://nodemailer.com) to send email.
+It's a [Nodemailer](https://nodemailer.com) wrapper.
+
 ## Install
 
 ```sh
@@ -15,7 +16,7 @@ npm install send-email
 const { sendEmail } = require('send-email')
 
 const config = {
-	service: 'gmail',
+    service: 'gmail',
     auth: {
         user: 'you@example.com',
         pass: '😀🔥🚀'
