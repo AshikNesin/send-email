@@ -1,8 +1,8 @@
 # send-email
 
-Send a quick email using any major email service provider.
+Send a email using any major email service provider.
 
-It's a [Nodemailer](https://nodemailer.com) wrapper.
+It's a [Nodemailer](https://nodemailer.com) wrapper. You can see support for several [well-known providers](https://nodemailer.com/smtp/well-known/)
 
 ## Install
 
@@ -38,6 +38,7 @@ sendEmail(payload, config)
 
 ## TODO
 - [ ] Handle Errors properly.
+- [ ] Support for Environment variables
 
 ## Author
 
@@ -50,3 +51,7 @@ sendEmail(payload, config)
 ## Contributing
 
 Contributions are highly welcome!
+
+## Inspiration
+
+[Now Emails](https://emails.now.sh/)
