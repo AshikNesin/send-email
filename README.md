@@ -9,28 +9,27 @@ It's a [Nodemailer](https://nodemailer.com) wrapper. You can see support for sev
 ```sh
 npm install send-email
 ```
+## Environment Variables
+
+```
+SEND_EMAIL_SERVICE_PROVIDER=gmail
+SEND_EMAIL_AUTH_USER=you@example.com
+SEND_EMAIL_AUTH_PASS=YourPassword
+```
 
 ## Usage
 
 ```js
 const { sendEmail } = require('send-email')
 
-const config = {
-    service: 'gmail',
-    auth: {
-        user: 'you@example.com',
-        pass: '😀🔥🚀'
-    }
-}
-
 let payload = {
     "to": "test@email.com",
     "subject": "sending emails using send-email",
-    "text": "hello world!",
+    // "text": "hello world!",
     "html": "hello <b>world</b>!",
     "from": "Myself <myself@domain.com>" // optional
 }
-sendEmail(payload, config)
+sendEmail(payload)
     .then((res) => {
         console.log(res);
     })
@@ -38,7 +37,7 @@ sendEmail(payload, config)
 
 ## TODO
 - [ ] Handle Errors properly.
-- [ ] Support for Environment variables
+- [x] Support for Environment variables
 
 ## Author
 

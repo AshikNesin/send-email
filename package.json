@@ -1,6 +1,6 @@
 {
   "name": "send-email",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Easily send email using any service provider",
   "main": "lib/index.js",
   "files": [
@@ -15,7 +15,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/HugeThoughts/send-email"
+    "url": "https://github.com/AshikNesin/send-email"
   },
   "scripts": {
     "build": "babel -d ./ ./src"
