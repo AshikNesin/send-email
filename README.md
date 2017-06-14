@@ -34,7 +34,16 @@ sendEmail(payload)
         console.log(res);
     })
 ```
+## Note
 
+If you are using [dotenv](https://www.npmjs.com/package/dotenv) to set environment variables dynamically then you need to call `require('dotenv').config()` before importing send-email.
+
+```js
+const dotenv = require('dotenv');
+dotenv.config();
+
+const { sendEmail } = require('send-email')
+```
 ## TODO
 - [ ] Handle Errors properly.
 - [x] Support for Environment variables
