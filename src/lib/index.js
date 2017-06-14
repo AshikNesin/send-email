@@ -2,6 +2,7 @@ const { createTransport } = require('nodemailer')
 
 const config = {
     service: process.env.SEND_EMAIL_SERVICE_PROVIDER,
+    secure: true, // use SSL
     auth: {
         user: process.env.SEND_EMAIL_AUTH_USER,
         pass: process.env.SEND_EMAIL_AUTH_PASS
