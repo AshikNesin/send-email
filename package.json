@@ -1,38 +1,33 @@
 {
   "name": "send-email",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Easily send email using any service provider",
-  "main": "lib/index.js",
-  "files": [
-    "lib/"
-  ],
+  "main": "index.js",
   "keywords": [
     "node",
     "email",
     "microservice",
-    "nodemailer"
+    "nodemailer",
+    "ses",
+    "sendgrid",
+    "mailgun",
+    "gmail"
   ],
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/AshikNesin/send-email"
   },
-  "scripts": {
-    "build": "babel -d ./ ./src"
-  },
   "author": {
     "name": "Ashik Nesin",
     "email": "mail@ashiknesin.com",
-    "url": "https://github.com/HugeThoughts/send-email"
+    "url": "https://github.com/AshikNesin/send-email"
   },
   "dependencies": {
+    "check-env": "^1.3.0",
     "nodemailer": "^4.0.1"
   },
   "devDependencies": {
-    "babel-cli": "^6.5.1",
-    "babel-core": "^6.5.2",
-    "babel-eslint": "^6.0.0",
-    "babel-plugin-transform-function-bind": "^6.5.2",
-    "babel-preset-es2015": "^6.5.0"
+    "xo": "^0.18.2"
   }
 }
